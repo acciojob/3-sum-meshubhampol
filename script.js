@@ -9,7 +9,7 @@ function threeSum(arr, target) {
 
     while(j<k) {
       let sum2=arr[j]+arr[k];
-      if( ((sum1+sum2) - target) < ans) {
+      if( ((sum1+sum2) - target) < ans-target) {
         ans=sum1+sum2;
       }
       if((sum1+sum2)=== target) {
