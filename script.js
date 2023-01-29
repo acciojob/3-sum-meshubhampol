@@ -1,6 +1,6 @@
 function threeSum(arr, target) {
   //your code here
-  let ans=Number.MAX_SAFE_INTEGER;
+  let ans=Math.pow(10,9);
   arr.sort();
   if(arr.length<3) {
     return 0;
