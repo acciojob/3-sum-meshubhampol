@@ -17,10 +17,10 @@ function threeSum(arr, target) {
         ans=sum1+sum2;
       }
 
-      if((sum1+sum2) === target) {
-        return sum1+sum2;
-      }
-      else if((sum1+sum2) > target) {
+      // if((sum1+sum2) === target) {
+      //   return sum1+sum2;
+      // }
+      if((sum1+sum2) > target) {
         k--;
       }
       else {
