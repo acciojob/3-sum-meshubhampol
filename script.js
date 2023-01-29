@@ -1,6 +1,6 @@
 function threeSum(arr, target) {
   //your code here
-  let ans=Number.MAX_VALUE;
+  let ans=Number.MAX_SAFE_INTEGER;
   arr.sort();
   if(arr.length<3) {
     return 0;
