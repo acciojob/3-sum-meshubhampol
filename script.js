@@ -13,14 +13,14 @@ function threeSum(arr, target) {
     while(j<k) {
       let sum2=arr[j]+arr[k];
 
-      if( (Math.abs(target-(sum1+sum2)) ) < Math.abs(target-ans) ) {
+      if( (Math.abs(target-(sum1+sum2)) ) <= Math.abs(target-ans) ) {
         ans=sum1+sum2;
       }
 
-      // if((sum1+sum2) === target) {
-      //   return sum1+sum2;
-      // }
-      if((sum1+sum2) > target) {
+      if((sum1+sum2) === target) {
+        return sum1+sum2;
+      }
+      else if((sum1+sum2) > target) {
         k--;
       }
       else {
